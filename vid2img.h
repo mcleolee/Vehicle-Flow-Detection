@@ -30,6 +30,8 @@ public:
     int showFilenames();
     int countImage();
     int countVideo();
+    bool final();
+
 
 private:
 
@@ -90,6 +92,15 @@ inline std::vector<std::string> VideoToImage::runTroughAllFiles(){
     return filenames;
 }
 
+/*
+ *  这个程序将遍历文件夹中的所有文件名，并将它们添加到filenames向量中。
+ *  你可以使用push_back()方法将每个文件名添加到向量中。最后，程序将打印所有文件名。
+ *  请注意，我们使用entry.path().filename().string()获取文件名字符串，
+ *  因为entry.path().filename()返回一个std::filesystem::path对象，而不是一个字符串。
+ *  使用string()方法将其转换为字符串类型。
+ */
+
+
 inline int VideoToImage::showFilenames(){
     log("This is all file names: \n");
     for(const auto& filename : filenames)
@@ -98,27 +109,41 @@ inline int VideoToImage::showFilenames(){
 }
 
 inline int VideoToImage::countImage() {
-    int count;
-    
-
-
+    int count = 0;
+    for(const auto& filename : filenames)
+        if(isImage(filename))
+            count++;
     return count;
 }
 
+// 函数被定义为inline，这意味着编译器可能会在使用函数的地方将其内联展开，而不是调用函数。
+
+// 该函数的作用是计算在VideoToImage对象的filenames向量中包含多少个图像文件。
+// 函数使用一个名为count的整数变量来计算找到的图像文件数。
+// 在for循环中，它遍历filenames向量中的所有元素，如果当前元素是图像文件，则将计数器count加1。
+// 最后，函数返回count变量的值。
+//
+// 在循环中，filename是filenames向量中的每个元素。
+// const auto&表示我们使用filename时不希望修改其值，因此我们使用引用来避免复制。
+// isImage(filename)是另一个函数调用，它用于判断给定文件名是否是一个图像文件。
+// 如果是，count变量将被增加1。
+
 inline int VideoToImage::countVideo() {
-    int count;
-
-
-
+    int count =0;
+    for(const auto &filename : filenames)
+        if(isVideo(filename))
+            count++;
     return count ;
 }
 
-/*
- *  这个程序将遍历文件夹中的所有文件名，并将它们添加到filenames向量中。
- *  你可以使用push_back()方法将每个文件名添加到向量中。最后，程序将打印所有文件名。
- *  请注意，我们使用entry.path().filename().string()获取文件名字符串，
- *  因为entry.path().filename()返回一个std::filesystem::path对象，而不是一个字符串。
- *  使用string()方法将其转换为字符串类型。
- */
+bool VideoToImage::final() {
+    if( countImage() && countVideo()==0 )
+        return true;
+    else{
+        cout << "no image or there are still videos" << endl;
+        return false;
+    }
+}
+
 
 #endif //VEHICLE_FLOW_DETECTION_VID2IMG_H
