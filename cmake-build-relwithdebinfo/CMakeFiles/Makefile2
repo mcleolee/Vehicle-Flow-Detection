@@ -72,7 +72,7 @@ CMAKE_BINARY_DIR = /Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/opencv3_demo.dir/all
+all: CMakeFiles/Vehicle_Flow_Detection_new.dir/all
 all: CMakeFiles/Vehicle_Flow_Detection.dir/all
 
 .PHONY : all
@@ -83,37 +83,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/opencv3_demo.dir/clean
+clean: CMakeFiles/Vehicle_Flow_Detection_new.dir/clean
 clean: CMakeFiles/Vehicle_Flow_Detection.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/opencv3_demo.dir
+# Target rules for target CMakeFiles/Vehicle_Flow_Detection_new.dir
 
 # All Build rule for target.
-CMakeFiles/opencv3_demo.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv3_demo.dir/build.make CMakeFiles/opencv3_demo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv3_demo.dir/build.make CMakeFiles/opencv3_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-relwithdebinfo/CMakeFiles --progress-num=3,4 "Built target opencv3_demo"
-.PHONY : CMakeFiles/opencv3_demo.dir/all
+CMakeFiles/Vehicle_Flow_Detection_new.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection_new.dir/build.make CMakeFiles/Vehicle_Flow_Detection_new.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection_new.dir/build.make CMakeFiles/Vehicle_Flow_Detection_new.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-relwithdebinfo/CMakeFiles --progress-num=3,4 "Built target Vehicle_Flow_Detection_new"
+.PHONY : CMakeFiles/Vehicle_Flow_Detection_new.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/opencv3_demo.dir/rule: cmake_check_build_system
+CMakeFiles/Vehicle_Flow_Detection_new.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-relwithdebinfo/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/opencv3_demo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Vehicle_Flow_Detection_new.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-relwithdebinfo/CMakeFiles 0
-.PHONY : CMakeFiles/opencv3_demo.dir/rule
+.PHONY : CMakeFiles/Vehicle_Flow_Detection_new.dir/rule
 
 # Convenience name for target.
-opencv3_demo: CMakeFiles/opencv3_demo.dir/rule
+Vehicle_Flow_Detection_new: CMakeFiles/Vehicle_Flow_Detection_new.dir/rule
 
-.PHONY : opencv3_demo
+.PHONY : Vehicle_Flow_Detection_new
 
 # clean rule for target.
-CMakeFiles/opencv3_demo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv3_demo.dir/build.make CMakeFiles/opencv3_demo.dir/clean
-.PHONY : CMakeFiles/opencv3_demo.dir/clean
+CMakeFiles/Vehicle_Flow_Detection_new.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection_new.dir/build.make CMakeFiles/Vehicle_Flow_Detection_new.dir/clean
+.PHONY : CMakeFiles/Vehicle_Flow_Detection_new.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Vehicle_Flow_Detection.dir

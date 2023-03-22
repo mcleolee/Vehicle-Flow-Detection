@@ -98,21 +98,6 @@ opencv3_demo_EXTERNAL_OBJECTS =
 
 opencv3_demo: CMakeFiles/opencv3_demo.dir/main.cpp.o
 opencv3_demo: CMakeFiles/opencv3_demo.dir/build.make
-opencv3_demo: /usr/local/lib/libopencv_gapi.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_highgui.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_ml.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_objdetect.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_photo.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_stitching.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_video.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_videoio.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_imgcodecs.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_dnn.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_calib3d.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_features2d.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_flann.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_imgproc.4.7.0.dylib
-opencv3_demo: /usr/local/lib/libopencv_core.4.7.0.dylib
 opencv3_demo: CMakeFiles/opencv3_demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-relwithdebinfo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opencv3_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv3_demo.dir/link.txt --verbose=$(VERBOSE)

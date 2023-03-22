@@ -8,8 +8,9 @@
 #include <filesystem>
 #include <vector>
 #include <iostream>
+#include <opencv2/opencv.hpp>
 
-#define log(x) std::cout << "\n\t" << x << std::endl
+
 
 using std::cout;
 using std::endl;
@@ -73,11 +74,12 @@ inline int VideoToImage::testForImageAndVideo(){
     bool test2 = isVideo(testString1);
     bool test3 = isImage(testString2);
     bool test4 = isVideo(testString2);
-    log("the result should be 1 0 0 1");
-    log(test1);
-    log(test2);
-    log(test3);
-    log(test4);
+    cout << "the result should be 1 0 0 1 \n\t";
+    cout << test1 << endl;
+    cout << test2 << endl;
+    cout << test3 << endl;
+    cout << test4 << endl;
+    return 0;
 }
 
 
@@ -102,7 +104,7 @@ inline std::vector<std::string> VideoToImage::runTroughAllFiles(){
 
 
 inline int VideoToImage::showFilenames(){
-    log("This is all file names: \n");
+    cout << "This is all file names: \n";
     for(const auto& filename : filenames)
         cout << filename << endl;
     return 0;

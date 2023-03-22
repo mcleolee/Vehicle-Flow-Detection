@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/raven/CLionProjects/Vehicle-Flow-Detection/cardetc.h
+
+/Users/raven/CLionProjects/Vehicle-Flow-Detection/main.cpp
+iostream
+-
+cardetc.h
+/Users/raven/CLionProjects/Vehicle-Flow-Detection/cardetc.h
+vid2img.h
+/Users/raven/CLionProjects/Vehicle-Flow-Detection/vid2img.h
+
+/Users/raven/CLionProjects/Vehicle-Flow-Detection/vid2img.h
+filesystem
+-
+vector
+-
+iostream
+-
+opencv2/opencv.hpp
+-
+

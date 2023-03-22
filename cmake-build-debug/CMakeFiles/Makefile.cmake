@@ -56,6 +56,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/opencv3_demo.dir/DependInfo.cmake"
+  "CMakeFiles/Vehicle_Flow_Detection_new.dir/DependInfo.cmake"
   "CMakeFiles/Vehicle_Flow_Detection.dir/DependInfo.cmake"
   )

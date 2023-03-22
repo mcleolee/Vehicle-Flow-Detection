@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named opencv3_demo
+# Target rules for targets named Vehicle_Flow_Detection_new
 
 # Build rule for target.
-opencv3_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opencv3_demo
-.PHONY : opencv3_demo
+Vehicle_Flow_Detection_new: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Vehicle_Flow_Detection_new
+.PHONY : Vehicle_Flow_Detection_new
 
 # fast build rule for target.
-opencv3_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv3_demo.dir/build.make CMakeFiles/opencv3_demo.dir/build
-.PHONY : opencv3_demo/fast
+Vehicle_Flow_Detection_new/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection_new.dir/build.make CMakeFiles/Vehicle_Flow_Detection_new.dir/build
+.PHONY : Vehicle_Flow_Detection_new/fast
 
 #=============================================================================
 # Target rules for targets named Vehicle_Flow_Detection
@@ -161,7 +161,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv3_demo.dir/build.make CMakeFiles/opencv3_demo.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection_new.dir/build.make CMakeFiles/Vehicle_Flow_Detection_new.dir/main.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection.dir/build.make CMakeFiles/Vehicle_Flow_Detection.dir/main.cpp.o
 .PHONY : main.cpp.o
 
@@ -171,7 +171,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv3_demo.dir/build.make CMakeFiles/opencv3_demo.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection_new.dir/build.make CMakeFiles/Vehicle_Flow_Detection_new.dir/main.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection.dir/build.make CMakeFiles/Vehicle_Flow_Detection.dir/main.cpp.i
 .PHONY : main.cpp.i
 
@@ -181,7 +181,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv3_demo.dir/build.make CMakeFiles/opencv3_demo.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection_new.dir/build.make CMakeFiles/Vehicle_Flow_Detection_new.dir/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vehicle_Flow_Detection.dir/build.make CMakeFiles/Vehicle_Flow_Detection.dir/main.cpp.s
 .PHONY : main.cpp.s
 
@@ -194,7 +194,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Vehicle_Flow_Detection"
-	@echo "... opencv3_demo"
+	@echo "... Vehicle_Flow_Detection_new"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

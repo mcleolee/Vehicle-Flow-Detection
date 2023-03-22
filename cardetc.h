@@ -7,7 +7,7 @@
 #ifndef VEHICLE_FLOW_DETECTION_CARDETC_H
 #define VEHICLE_FLOW_DETECTION_CARDETC_H
 
-#define log(x) std::cout << "\n\t" << x << std::endl
+// #define log(x) std::cout << "\n\t" << x << std::endl
 using std::cout;
 using std::endl;
 using std::cin;
