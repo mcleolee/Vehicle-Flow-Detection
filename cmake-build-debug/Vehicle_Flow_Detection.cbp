@@ -5,7 +5,7 @@
 		<Option title="Vehicle_Flow_Detection"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug"/>
@@ -32,6 +32,50 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv3_demo">
+				<Option output="/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/opencv3_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 opencv3_demo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv3_demo/fast">
+				<Option output="/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/opencv3_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 opencv3_demo/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/raven/CLionProjects/Vehicle-Flow-Detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -84,10 +128,27 @@
 			<Option target="Vehicle_Flow_Detection"/>
 		</Unit>
 		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/main.cpp">
+			<Option target="opencv3_demo"/>
+			<Option target="Vehicle_Flow_Detection"/>
+		</Unit>
+		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/vid2img.h">
+			<Option target="opencv3_demo"/>
 			<Option target="Vehicle_Flow_Detection"/>
 		</Unit>
 		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

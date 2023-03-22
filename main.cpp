@@ -1,10 +1,11 @@
 #include <iostream>
 #include "cardetc.h"
+#include "vid2img.h"
 
 int main() {
-    Asset ast;
-    ast.testForImageAndVideo();
-
+    VideoToImage v2i;
+    // v2i.testForImageAndVideo();
+    v2i.showFilenames();
 
     return 0;
 }
