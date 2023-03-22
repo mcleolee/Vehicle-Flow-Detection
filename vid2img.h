@@ -10,22 +10,20 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
-
-
 using std::cout;
 using std::endl;
 using std::cin;
 
 namespace fs = std::__fs::filesystem;
 
+
 class VideoToImage{
 public:
-
     std::vector<std::string> filenames = runTroughAllFiles();
     int totalFiles = filenames.size();
 
-    bool isImage(const std::string &filename);       // 判断 asset 是不是图像
-    bool isVideo(const std::string &filename);       // 判断 asset 是不是视频
+    static bool isImage(const std::string &filename);       // 判断 asset 是不是图像
+    static bool isVideo(const std::string &filename);       // 判断 asset 是不是视频
     int testForImageAndVideo();                      // 测试
     std::vector<std::string> runTroughAllFiles();    // 遍历所有文件
     int showFilenames();
@@ -33,9 +31,7 @@ public:
     int countVideo();
     bool final();
 
-
 private:
-
     std::string videoPath;
     std::string imagePath;
 
@@ -43,10 +39,8 @@ private:
 
 // ============================================ 实现 =============================================== //
 
-
-
 inline bool VideoToImage::isImage(const std::string &filename){
-    unsigned long preExt = filename.find_last_of(".");  //
+    unsigned long preExt = filename.find_last_of('.');  //
     std::string ext = filename.substr(preExt + 1);
     std::transform(ext.begin(), ext.end(), ext.begin(), ::tolower);
     if (ext == "jpg" || ext == "jpeg" || ext == "png" || ext == "bmp")
@@ -57,7 +51,7 @@ inline bool VideoToImage::isImage(const std::string &filename){
 }
 inline bool VideoToImage::isVideo(const std::string &filename)
 {
-    unsigned long preExt = filename.find_last_of(".");
+    unsigned long preExt = filename.find_last_of('.');
     std::string ext = filename.substr(preExt + 1);
     std::transform(ext.begin(), ext.end(), ext.begin(), ::tolower);
     if (ext == "mp4" || ext == "avi" || ext == "mov" || ext == "wmv")
@@ -68,17 +62,23 @@ inline bool VideoToImage::isVideo(const std::string &filename)
 }
 
 inline int VideoToImage::testForImageAndVideo(){
+    cout << "\n================ test ===================\n\n";
     std::string testString1 = "thisIsATest.jpg";
     std::string testString2 = "thisIsATest.mp4";
     bool test1 = isImage(testString1);
     bool test2 = isVideo(testString1);
     bool test3 = isImage(testString2);
     bool test4 = isVideo(testString2);
-    cout << "the result should be 1 0 0 1 \n\t";
-    cout << test1 << endl;
-    cout << test2 << endl;
-    cout << test3 << endl;
-    cout << test4 << endl;
+
+    cout << "the result should be 1 0 0 1 \n";
+    cout << "the test result is: " << test1 << test2 << test3 << test4 << endl;
+
+    std::cout << "image:" << countImage() << std::endl;
+    std::cout << "video:" << countVideo() << std::endl;
+
+    cout << "final bool:" << final() << endl;
+    cout << "\n================ test end =================\n";
+
     return 0;
 }
 
@@ -90,7 +90,6 @@ inline std::vector<std::string> VideoToImage::runTroughAllFiles(){
     for(const auto& entry : fs::directory_iterator(showPath)) // 遍历
         if(!fs::is_directory(entry.status())) // 如果不是文件夹
             filenames.push_back(entry.path().filename().string()); // add into vector
-
     return filenames;
 }
 
