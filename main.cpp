@@ -3,6 +3,7 @@
 #include "vid2img.h"
 #include "adconvert.h"
 #include "img2vid.h"
+#include "background.h"
 
 #define log(x) std::cout << "\n\t" << x << std::endl
 #include <opencv2/opencv.hpp>
