@@ -131,6 +131,10 @@
 		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/cardetc.h">
 			<Option target="Vehicle_Flow_Detection"/>
 		</Unit>
+		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/img2vid.h">
+			<Option target="Vehicle_Flow_Detection_new"/>
+			<Option target="Vehicle_Flow_Detection"/>
+		</Unit>
 		<Unit filename="/Users/raven/CLionProjects/Vehicle-Flow-Detection/main.cpp">
 			<Option target="Vehicle_Flow_Detection_new"/>
 			<Option target="Vehicle_Flow_Detection"/>

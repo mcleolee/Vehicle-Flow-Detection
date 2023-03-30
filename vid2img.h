@@ -86,7 +86,7 @@ inline int VideoToImage::testForImageAndVideo(){
 
 inline std::vector<std::string> VideoToImage::runTroughAllFiles(){
     std::vector<std::string> filenames;
-    fs::path showPath("/Users/raven/Insight-MVT_Annotation_Test/MVI_39031");  // 这里是文件夹路径
+    fs::path showPath("/Users/raven/CLionProjects/Vehicle-Flow-Detection/Insight-MVT_Annotation_Test/MVI_39031");  // 这里是文件夹路径
     for(const auto& entry : fs::directory_iterator(showPath)) // 遍历
         if(!fs::is_directory(entry.status())) // 如果不是文件夹
             filenames.push_back(entry.path().filename().string()); // add into vector
@@ -95,8 +95,8 @@ inline std::vector<std::string> VideoToImage::runTroughAllFiles(){
 
 /*
  *  这个程序将遍历文件夹中的所有文件名，并将它们添加到filenames向量中。
- *  你可以使用push_back()方法将每个文件名添加到向量中。最后，程序将打印所有文件名。
- *  请注意，我们使用entry.path().filename().string()获取文件名字符串，
+ *  可以使用push_back()方法将每个文件名添加到向量中。最后，程序将打印所有文件名。
+ *  使用entry.path().filename().string()获取文件名字符串，
  *  因为entry.path().filename()返回一个std::filesystem::path对象，而不是一个字符串。
  *  使用string()方法将其转换为字符串类型。
  */
