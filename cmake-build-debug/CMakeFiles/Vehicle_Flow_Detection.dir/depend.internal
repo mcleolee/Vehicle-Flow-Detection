@@ -3,7 +3,9 @@
 
 CMakeFiles/Vehicle_Flow_Detection.dir/main.cpp.o
  /Users/raven/CLionProjects/Vehicle-Flow-Detection/adconvert.h
+ /Users/raven/CLionProjects/Vehicle-Flow-Detection/background.h
  /Users/raven/CLionProjects/Vehicle-Flow-Detection/cardetc.h
+ /Users/raven/CLionProjects/Vehicle-Flow-Detection/img2vid.h
  /Users/raven/CLionProjects/Vehicle-Flow-Detection/main.cpp
  /Users/raven/CLionProjects/Vehicle-Flow-Detection/vid2img.h
  /usr/local/include/opencv4/opencv2/calib3d.hpp

@@ -20,7 +20,8 @@ int main() {
     adc.showAdData_number();
 
 //    adc.showPixel();
-
+    BackgroundSubtractor backgroundSubtractor("/path/to/images");
+    backgroundSubtractor.process();
 
     getchar();
     return 0;
