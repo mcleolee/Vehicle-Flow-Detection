@@ -25,6 +25,7 @@ class ImageToVideo{
 public:
     ImageToVideo(std::string inputPath, std::string outputPath, int fps);
     bool convert();
+    int run();
 
 
 private:
@@ -216,6 +217,22 @@ bool ImageToVideo::convert() {
     av_freep(&buffer);
 
     return true;
+}
+
+int ImageToVideo::run() {
+    std::string inputPath_run = "/Users/raven/CLionProjects/Vehicle-Flow-Detection/Insight-MVT_Annotation_Test/MVI_39031";
+    std::string outputPath_run = "/Users/raven/CLionProjects/testVideo.mp4";
+    int fps_run = 30;
+
+    ImageToVideo converter(inputPath_run, outputPath_run, fps_run);
+    if(!converter.convert()){
+        std::cerr << "Error converting images to video" << std::endl;
+        return 1;
+    }
+
+    return 0;
+
+
 }
 
 
